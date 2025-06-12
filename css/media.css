@@ -2,10 +2,55 @@
   .container {
     max-width: 768px;
   }
+
+  .logo {
+    margin: 0; /* або щось симетричне */
+    padding: 24px 0; /* це дасть вертикальний відступ */
+  }
+
+  .nav-list {
+    display: flex;
+    justify-content: flex-start;
+    gap: 40px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    margin-left: 120px;
+  }
+  .nav-bar {
+    display: flex;
+    align-items: center;
+  }
+  .address {
+    display: flex;
+    font-style: normal;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .address-list {
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap;
+    justify-content: flex-end; */
+    gap: 12px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
   .hero-title {
     max-width: 496px;
     margin-bottom: 36px;
   }
+  .hero-section {
+    background-color: #2e2f42;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/people-office-tab.jpg");
+    max-width: 768px;
+  }
+
   .feature-list {
     display: flex;
     flex-wrap: wrap;
@@ -32,6 +77,55 @@
   .team-card-first-card {
     gap: 24px;
   }
+  .footer-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    justify-content: flex-start;
+    gap: 24px;
+    text-align: left;
+    margin-left: 108px;
+  }
+  .footer-left {
+    align-items: flex-start;
+    text-align: left;
+  }
+  .div-subscribe {
+    align-items: flex-start;
+    width: 768px;
+  }
+  .footer-social {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .footer-social__list {
+    display: flex;
+    justify-content: center;
+  }
+
+  .subscribe-form {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .modal-input {
+    width: 264px;
+    max-width: 264px;
+    margin: 0;
+  }
+
+  .button-subscribe {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
 }
 
 /* =========== DESKYOP MEDIA  =========== */
@@ -42,11 +136,47 @@
     padding-right: 15px;
   }
   .logo {
-    margin-bottom: 48px;
+    margin-right: 16px;
+  }
+  .nav-list {
+    display: flex;
+    justify-content: flex-start;
+    gap: 40px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
+  .nav-bar {
+    display: flex;
+    align-items: center;
+  }
+  .address {
+    display: flex;
+    font-style: normal;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex-direction: row;
+    gap: 40px;
+  }
+  .address-list {
+    display: inline-flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    gap: 40px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
   }
   .hero-title {
     margin-bottom: 48px;
     max-width: 496px;
+  }
+  .hero-section {
+    background-color: #2e2f42;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/people-office.jpg");
+    max-width: 1440px;
   }
   .features-list {
     display: flex;
@@ -134,5 +264,44 @@
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+  }
+  .footer-container {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+  }
+  .footer-left {
+    margin-right: 120px;
+  }
+  .footer-logo {
+    display: inline-block;
+    margin-bottom: 16px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+  }
+  .footer-social {
+    width: 208px;
+  }
+  .footer-text {
+    max-width: 264px;
+  }
+  .div-subscribe {
+    margin-left: auto;
+  }
+  .subscribe-form {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+  }
+  .modal-input {
+    width: 264px;
+    height: 40px;
+    padding-left: 16px;
+  }
+  .button-subscribe {
+    min-width: 165px;
+    height: 40px;
+    padding: 0 24px;
   }
 }

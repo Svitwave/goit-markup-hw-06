@@ -140,7 +140,7 @@ p {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
-  margin-right: 16px;
+  margin: 16px;
 }
 
 .logo:hover,
@@ -207,25 +207,26 @@ p {
 }
 
 .nav-bar {
-  display: flex;
+  display: flex; /* Сховати на мобільних */
   align-items: center;
 }
 
 .nav-list {
-  display: flex;
-  justify-content: flex-start;
+  display: none; /* Сховати на мобільних */
+  /* justify-content: flex-start;
   gap: 40px;
   line-height: 1.5;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.02em; */
 }
 
 /*================ АДРЕС ================ */
 .address {
-  font-style: normal;
+  display: none; /* Сховати на мобільних */
+  /* font-style: normal;
   align-items: flex-end;
   justify-content: flex-end;
   flex-direction: row;
-  gap: 40px;
+  gap: 40px; */
 }
 
 .address-list {
@@ -258,12 +259,12 @@ p {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url("../images/people-office.jpg");
+    url("../images/people-office-mob.jpg");
   padding: 188px 0;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  max-width: 1440px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -543,17 +544,29 @@ p {
 }
 
 .footer-container {
-  display: flex;
-  align-items: baseline;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 72px;
+  text-align: center;
 }
 
 .footer-left {
-  margin-right: 120px;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .footer-logo {
-  display: inline-block;
-  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 0px;
+  /* display: inline-block;
+  margin-bottom: 16px; */
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -572,12 +585,17 @@ p {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  max-width: 264px;
+  max-width: 288px;
 }
 
 /*============= ФУТЕР СОЦІАЛЬНІ МЕДІА ============*/
 .footer-social {
-  width: 208px;
+  /* width: 208px; */
+  margin: 72px 0;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .footer-social__title {
@@ -620,7 +638,11 @@ p {
 }
 
 .modal-input {
-  width: 264px;
+  /* width: 264px;
+  height: 40px; */
+
+  width: 100%;
+  max-width: 288;
   height: 40px;
   border: 1px solid #ffffff;
   background-color: transparent;
@@ -631,6 +653,7 @@ p {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   color: #fff;
+  margin-bottom: 16px;
 }
 
 .modal-imput .form-input::placeholder {
@@ -653,7 +676,8 @@ p {
   letter-spacing: 0.04em;
   border: none;
   cursor: pointer;
-  padding: 0 24px;
+  /* padding-top: 16px; */
+  margin: 0 auto;
   transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -754,13 +778,21 @@ input::placeholder {
 }
 
 .div-subscribe {
-  margin-left: auto;
+  /* margin-left: auto; */
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .subscribe-form {
-  display: flex;
+  /* display: flex;
   gap: 24px;
-  align-items: center;
+  align-items: center; */
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
 }
 
 .paragraf {
@@ -926,11 +958,6 @@ input::placeholder {
   background-color: rgba(46, 47, 66, 0.4);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal-overlay.is-open {
-  opacity: 1;
-  pointer-events: auto;
 }
 
 .modal {
