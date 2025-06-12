@@ -268,7 +268,15 @@ p {
   margin-left: auto;
   margin-right: auto;
 }
-
+@media screen and (min-resolution: 2x) {
+  .hero-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/Dark-bg-mob-2x.jpg");
+  }
+}
 .hero-title {
   display: block;
   margin: 0 auto;
