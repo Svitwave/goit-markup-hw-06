@@ -276,9 +276,10 @@
   }
   .footer-container {
     display: flex;
-    flex-direction: row;
     align-items: baseline;
+    gap: 24px;
   }
+
   .footer-left {
     margin-right: 120px;
   }
@@ -296,12 +297,13 @@
     max-width: 264px;
   }
   .div-subscribe {
+    /* display: flex; */
     margin-left: auto;
   }
   .subscribe-form {
     display: flex;
-    gap: 24px;
     align-items: center;
+    gap: 24px;
   }
   .modal-input {
     width: 264px;
