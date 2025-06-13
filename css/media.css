@@ -93,7 +93,7 @@
   }
   .div-subscribe {
     align-items: flex-start;
-    width: 768px;
+    /* width: 768px; */
   }
   .footer-social {
     display: flex;
@@ -125,6 +125,10 @@
     align-items: center;
     justify-content: center;
     flex-direction: row;
+  }
+  .modal {
+    width: 408px;
+    min-height: 584px;
   }
 }
 @media screen and (min-width: 768px) and (min-resolution: 2x) {
@@ -314,6 +318,10 @@
     min-width: 165px;
     height: 40px;
     padding: 0 24px;
+  }
+  .modal {
+    width: 408px;
+    min-height: 584px;
   }
 }
 @media screen and (min-width: 1158px) and (min-resolution: 2x) {
