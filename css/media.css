@@ -35,8 +35,16 @@
     /* flex-wrap: wrap;
     justify-content: flex-end; */
     gap: 12px;
-    line-height: 1.5;
+    /* line-height: 1.5;
     letter-spacing: 0.02em;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    line-height: 1.16667;
+    letter-spacing: 0.04em;
+    color: #434455; */
+  }
+  .contact-link {
     font-weight: 400;
     font-size: 12px;
     line-height: 14px;
@@ -44,6 +52,7 @@
     letter-spacing: 0.04em;
     color: #434455;
   }
+
   .hero-title {
     max-width: 496px;
     margin-bottom: 36px;
@@ -81,7 +90,7 @@
     text-align: left;
   }
   .team-section {
-    padding: 96px 16px;
+    padding: 96px 0;
   }
   .team-list {
     display: flex;
@@ -152,6 +161,7 @@
   .modal {
     width: 408px;
     min-height: 584px;
+    padding: 72px 24px 24px 24px;
   }
 }
 @media screen and (min-width: 768px) and (min-resolution: 2x) {
@@ -202,8 +212,8 @@
     letter-spacing: 0.02em;
   }
   .hero-title {
-    /* margin-bottom: 48px;
-    max-width: 496px; */
+    margin-bottom: 48px;
+    /* max-width: 496px;  */
     font-weight: 700;
     font-size: 56px;
     line-height: 60px;
@@ -236,6 +246,13 @@
     font-weight: 500;
     font-size: 20px;
     line-height: 24px;
+  }
+  .features-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #434455;
   }
   .features-icon-box {
     display: flex;
@@ -352,6 +369,7 @@
   .modal {
     width: 408px;
     min-height: 584px;
+    padding: 72px 24px 24px 24px;
   }
 }
 @media screen and (min-width: 1158px) and (min-resolution: 2x) {
